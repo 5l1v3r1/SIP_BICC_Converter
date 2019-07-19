@@ -1,4 +1,4 @@
-# sip_bicc_converter
+# SIP_BICC_Converter
 
 SIP to BICC / BICC to SIP signalling converter.
 This is a SIP to BICC / BICC to SIP signalling converter.
