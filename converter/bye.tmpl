@@ -1,0 +1,10 @@
+BYE %(remote_contact)s SIP/2.0
+Via: SIP/2.0/UDP %(source_ip)s:%(source_port)s;branch=%(call_branch)s
+Max-Forwards: 70
+From: sip:%(from_number)s@%(source_ip)s;tag=%(from_tag)s
+To: sip:%(to_number)s@%(dest_ip)s;tag=%(to_tag)s
+Call-ID: %(call-id)s
+CSeq: 20 BYE
+User-Agent: Fake UA
+Reason: Q.850;cause=16;text="Normal call clearing"
+Content-Length:  0

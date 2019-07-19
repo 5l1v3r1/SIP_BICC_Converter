@@ -1,0 +1,8 @@
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP %(source_ip)s:%(source_port)s;branch=%(call_branch)s
+From: sip:%(from_number)s@%(source_ip)s;tag=%(from_tag)s
+To: sip:%(to_number)s@%(dest_ip)s;tag=%(to_tag)s
+Call-ID: %(call-id)s
+CSeq: 20 CANCEL
+User-agent: Fake UA
+Content-Length: 0

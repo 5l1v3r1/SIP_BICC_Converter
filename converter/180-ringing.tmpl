@@ -1,0 +1,10 @@
+SIP/2.0 180 Ringing
+Content-Length: 0
+From: sip:%(from_number)s@%(source_ip)s;tag=%(from_tag)s
+To: sip:%(to_number)s@%(dest_ip)s;tag=%(to_tag)s
+Via: SIP/2.0/UDP %(source_ip)s:%(source_port)s;branch=%(call_branch)s
+Call-ID: %(call-id)s
+CSeq: %(cseq)s
+Contact: sip:%(contact)s
+Supported: eventlist,norefersub
+Allow: ACK,BYE,CANCEL,INFO,INVITE,NOTIFY,OPTIONS,PRACK,REFER,UPDATE

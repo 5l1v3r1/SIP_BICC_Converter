@@ -1,0 +1,10 @@
+ACK sip:%(from_number)s@%(source_ip)s:%(source_port)s SIP/2.0
+Via: SIP/2.0/UDP %(dest_ip)s:%(dest_port)s;branch=%(call_branch)s
+From: sip:%(from_number)s@%(source_ip)s;tag=%(from_tag)s
+To: sip:%(to_number)s@%(dest_ip)s;tag=%(to_tag)s
+Call-ID: %(call-id)s
+CSeq: 20 ACK
+Contact: sip:%(to_number)s@%(dest_ip)s
+Max-Forwards: 70
+User-Agent: Fake UA
+Content-Length: 0
